@@ -1,0 +1,27 @@
+.content {
+	top: -70px;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+
+	@media (max-width:1280px) {
+		top: 0;
+		margin: 10px 10px 10px 10px;
+		z-index: 0;
+	}
+
+	.content-card {
+		.box-shadow(0px 5px 10px 0px @boxShadowColor);
+		width: 100%;
+		margin-bottom: 30px;
+		background: #ffffff;
+		.border-radius(2px);
+		padding: 20px;
+
+		@media (max-width:1280px) {
+			.box-shadow(none);
+
+		}
+	}
+}

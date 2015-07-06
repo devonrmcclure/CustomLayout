@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<hmtl>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto:500,400italic,700italic,300,700,500italic,300italic,400' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	      rel="stylesheet">
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<title>
+		Batteries Included
+	</title>
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top z-index-10">
+		<div class="navbar-header">
+	  	<a href="#" class="sidebar-toggle"><i class="material-icons">menu</i></a>
+	    <div class="brand-header">
+	     	<a class="brand-name" href="#">Batteries Included</a>
+	    </div>
+	    </div>
+	</nav>
+
+	<!-- Sidebar -->
+		<div class="sidebar z-index-30">
+			<div class="nav">
+				<a href="#" class="sidebar-toggle"><i class="material-icons">menu</i></a>
+				<div class="brand-header">
+					<a class="brand-name" href="#">Batteries Included</a>
+				</div>
+			</div>
+
+
+			<div class="sidebar-header">
+				<!-- If logged in, show Admin drop down here -->
+				<span class="user-image"><i class="material-icons md-48">account_circle</i></span>
+				<div class="user-info dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<span class="username">White Rock <i class="caret"></i></span></a>
+					<ul class="dropdown-menu">
+						<li class="ripple-effect"><a href="#"><i class="material-icons md-24 indigo500">home</i> Admin Dashboard</a></li>
+						<li class="ripple-effect"><a href="#"><i class="material-icons md-24 grey700">settings</i> Settings</a></li>
+						<li role="separator" class="divider"></li>
+						<li class="ripple-effect"><a href="#"><i class="material-icons md-24 redA700">power_settings_new</i> Log out</a></li>
+					</ul>
+					<br />
+					<small>Access Admin options</small>
+				</div>
+			</div>
+
+		    <form class="sidebar-search">
+			    <div class="group">
+		        	<input type="text" required>
+		         	<span class="highlight"></span>
+		         	<span class="bar"></span>
+		         	<label>Search</label>
+		       	</div>
+	       	</form>
+
+			<div class="sidebar-nav">
+
+				<ul>
+					<li class="ripple-effect"><a href="#"><i class="material-icons md-24 indigo500">home</i> Home</a></li>
+					<li class="ripple-effect"><a href="#"><i class="material-icons md-24 yellowA700">shopping_cart</i> Catalog</a></li>
+					<li class="ripple-effect"><a href="#"><i class="material-icons md-24 grey700">build</i> Servicing</a></li>
+					<li class="ripple-effect"><a href="#"><i class="material-icons md-24 deep-purple500">help</i> FAQ</a></li>
+					<li class="ripple-effect"><a href="#"><i class="material-icons md-24 redA700">location_on</i> Locations & Contact</a></li>
+				</ul>
+			</div>
+		</div>
+
+	<div class="content col-md-8 col-md-offset-2 z-index-20">
+		<div class="content-card">
+	        <h2>Content here</h2>
+	        <p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda recusandae id dolores ut eos vitae, nesciunt ab. Atque porro dolore, laborum accusantium sit doloremque, repellat, minima eum similique quia praesentium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio libero eaque, reiciendis deleniti error odit natus vitae fugit nesciunt obcaecati officiis corporis soluta, ipsam dolores magni facilis, odio explicabo molestias?
+	        </p>
+		</div>
+
+		<div class="content-card">
+			<h2>Form Elements</h2><br />
+	        <form>
+
+	           <div class="group">
+	             <input type="text" required>
+	             <span class="highlight"></span>
+	             <span class="bar"></span>
+	             <label>Name</label>
+	           </div>
+
+	           <div class="group">
+	             <input type="text" required>
+	             <span class="highlight"></span>
+	             <span class="bar"></span>
+	             <label>Email</label>
+	           </div>
+
+				<div class="checkbox-group">
+				    <input type="checkbox" id="checkiz">
+				    <label for="checkiz">
+				        <span class="check"></span>
+				        <span class="box"></span>
+				         Meow
+				     </label>
+				</div>
+
+	         </form>
+		</div>
+	</div>
+
+	<ul class="fab z-index-25">
+		<a href="#" class="fab-toggle"><li class="fab-main ripple-effect"><i class="material-icons md-24 md-white">add</i></li></a>
+
+		<li class="fab-item ripple-effect fab-deep-purple hidden"><a href="#"><i class="material-icons md-24 md-white">shopping_cart</i></a></li>
+
+		<li class="fab-item ripple-effect fab-light-blue hidden"><a href="#"><i class="material-icons md-24 md-white">help</i></a></li>
+
+	</ul>
+
+	<div class="toast z-index-35">
+		<i class="material-icons md-24 md-success">check</i><div class="toast-message"><span>Product has been successfully added to the catalog!</span></div>
+	</div>
+	<!-- Include footer here -->
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</hmtl>

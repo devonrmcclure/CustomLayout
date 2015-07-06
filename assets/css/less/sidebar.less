@@ -1,0 +1,182 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0px;
+    background: #fff;
+    margin-right: 270px;
+    width: 230px;
+    min-height: 100vh;
+    max-height: auto;
+    .box-shadow(5px 0px 10px 0px @boxShadowColor);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+    .nav {
+        background: @primaryColor;
+
+        .brand-header {
+            a {
+                line-height: @navbarHeight;
+                font-size: 1.4em;
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+
+        .material-icons {
+            color: #fff;
+            float: left;
+            line-height: @navbarHeight;
+            margin: 0 15px;
+        }
+    }
+
+    .sidebar-header {
+        width: 100%;
+        height: 140px;
+        background: @indigo-400;
+        border-bottom: 2px solid @indigo-500;
+        padding: 20px 0;
+        color: #fff;
+        margin-bottom: 0;
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        .user-image {
+            border-radius: 100px;
+            padding-left: 15px;
+        }
+
+        .user-info {
+            width: 100%;
+            padding-left: 20px;
+
+            .username {
+                font-size: 20px;
+            }
+
+            .dropdown-menu {
+                list-style-type: none;
+                margin: -20px 0 0 20px;
+                padding: 0;
+                .border-radius(2px);
+
+                li {
+                    margin: 0;
+                    padding: 0;
+                    text-align: left;
+                    a {
+                        display: block;
+                        padding: 10px 20px;
+                        color: @defaultFontColor;
+                        text-decoration: none;
+                        .material-icons {
+                            vertical-align: middle;
+                            margin-right: 10px;
+                        }
+                    }
+
+                    a:hover {
+                        text-decoration: none;
+                        background: @indigo-50;
+                        .border-radius(2px);
+                    }
+
+                }
+            }
+        }
+    }
+
+    .sidebar-search {
+        margin-bottom: -45px;
+        width: 100%;
+
+        input, label, .bar {
+            width: 100%;
+        }
+
+        input:focus ~ label, input:valid ~ label {
+            color: transparent;
+        }
+    }
+
+    .sidebar-nav {
+        overflow-y: auto;
+        height: auto;
+        max-height: 900px;
+
+
+        @media (max-height:1000px) {
+            height: 500px;
+        }
+
+        @media (max-height:768px) {
+            height: 320px;
+        }
+
+        @media (max-height: 480px) {
+            height: 200px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            li {
+                margin: 0;
+                padding: 0;
+                text-align: left;
+                a {
+                    display: block;
+                    padding: 20px;
+                    color: @defaultFontColor;
+                    text-decoration: none;
+                    .material-icons {
+                        vertical-align: middle;
+                        margin-right: 20px;
+                    }
+                }
+
+                a:hover {
+                    text-decoration: none;
+                    background: @indigo-50;
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width:1280px) {
+    .sidebar {
+        width: 85%;
+        left: -100%;
+    }
+}
+
+.sidebar.toggled {
+    @media (min-width:1024px) {
+        left: -260px;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
+    @media (max-width:1280px) {
+        left: 0;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+}
